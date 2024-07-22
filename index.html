@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <title>Reto</title>
+</head>
+
+<body>
+    <header class="header_principal">
+    <img class="imagen_header" src="image/aluraoracle.png">
+    </header>
+    <main class="main_general">
+        
+        <section class="ingreso_datos">
+            
+    
+        <textarea type="text"  class="container__timput" id="textoAEncriptar" placeholder="Ingrese texto aqui" ></textarea>
+        <div class="mensaje_completo_botones">
+        <small>①Solo letras minusculas sin acentos</small>
+        <div class="botones_opcion">
+            
+        <button class="boton__encriptar" onclick="guardarTexto()">Encriptar</button>
+        <button class="boton__desencriptar" onclick="mostrarTextoDesencriptado()">Desencriptar</button>
+        </div>
+
+    </div>
+
+        </section>
+        <section  id="imagenNoEncontrado" class="no_encontrado">
+     <img src="image/lupa.png" class="imagen_lupa" >
+        <h2 class="sin_mensaje">Ningún mensaje fue encontrado</h2>
+     <p class="sin_mensaje">Ingresa el texto que deseas encriptar o desencriptar.</p>
+    </section>
+    </main>
+   
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
